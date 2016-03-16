@@ -3,9 +3,7 @@
 one:
   name: MyString
   birthday: 2016-03-16
-  social: false
 
 two:
   name: MyString
   birthday: 2016-03-16
-  social: false

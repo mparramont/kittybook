@@ -12,7 +12,7 @@ class KittiesControllerTest < ActionDispatch::IntegrationTest
 
   test "should create kitty" do
     assert_difference('Kitty.count') do
-      post kitties_url, params: { kitty: { birthday: @kitty.birthday, name: @kitty.name, social: @kitty.social } }
+      post kitties_url, params: { kitty: { birthday: @kitty.birthday, name: @kitty.name } }
     end
 
     assert_response 201
@@ -24,7 +24,7 @@ class KittiesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update kitty" do
-    patch kitty_url(@kitty), params: { kitty: { birthday: @kitty.birthday, name: @kitty.name, social: @kitty.social } }
+    patch kitty_url(@kitty), params: { kitty: { birthday: @kitty.birthday, name: @kitty.name } }
     assert_response 200
   end
 
