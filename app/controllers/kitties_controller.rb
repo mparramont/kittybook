@@ -46,6 +46,6 @@ class KittiesController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def kitty_params
-      params.require(:kitty).permit(:name, :birthday)
+      params.require(:kitty).permit(:name, :birthday, :owner_id)
     end
 end
