@@ -1,3 +1,5 @@
 class KittySerializer < ActiveModel::Serializer
-  attributes :id, :name, :birthday, :social
+  attribute :name, key: :nickname
+
+  attributes :id, :birthday, :social
 end
