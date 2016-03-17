@@ -10,7 +10,9 @@ class KittiesController < ApplicationController
 
   # GET /kitties/1
   def show
-    render json: @kitty
+    if stale?(last_modified: @kitty.updated_at)
+      render json: @kitty
+    end
   end
 
   # POST /kitties
