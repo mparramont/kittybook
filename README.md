@@ -15,7 +15,7 @@ Based on: https://wyeworks.com/blog/2015/6/11/how-to-build-a-rails-5-api-only-an
 4. Go to `http://localhost:3000/kitties`
 5. Execute `curl -H "Content-Type:application/json; charset=utf-8" -d '{"name":"Tsuki","social":true,"birthday":"2011-04-04"}' http://localhost:3000/kitties`
 6. Refresh page
-7. Generate serializer `rails g serializer name birthday`
+7. Generate serializer `rails g serializer Kitty name birthday`
 8. Refresh view and check the differences
 
 ## Extras!
